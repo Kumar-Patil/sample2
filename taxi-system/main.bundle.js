@@ -36,16 +36,22 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pricing_pricing_component__ = __webpack_require__("./src/app/pricing/pricing.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__cabs_cabs_component__ = __webpack_require__("./src/app/cabs/cabs.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__rider_rider_component__ = __webpack_require__("./src/app/rider/rider.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__report_report_component__ = __webpack_require__("./src/app/report/report.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__finance_finance_component__ = __webpack_require__("./src/app/finance/finance.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__delivery_delivery_component__ = __webpack_require__("./src/app/delivery/delivery.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__user_add_user_add_user_component__ = __webpack_require__("./src/app/user/add-user/add-user.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pricing_add_edit_pricing_add_pricing_component__ = __webpack_require__("./src/app/pricing/add-edit-pricing/add-pricing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__surging_add_edit_surging_add_surging_component__ = __webpack_require__("./src/app/surging/add-edit-surging/add-surging.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__surging_surging_component__ = __webpack_require__("./src/app/surging/surging.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__cabs_add_edit_cab_add_edit_cab_component__ = __webpack_require__("./src/app/cabs/add-edit-cab/add-edit-cab.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__vendor_add_edit_vendor_add_edit_vendor_component__ = __webpack_require__("./src/app/vendor/add-edit-vendor/add-edit-vendor.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__delivery_tracking_tracking_component__ = __webpack_require__("./src/app/delivery/tracking/tracking.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__delivery_delivery_component__ = __webpack_require__("./src/app/delivery/delivery.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__user_add_user_add_user_component__ = __webpack_require__("./src/app/user/add-user/add-user.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pricing_add_edit_pricing_add_pricing_component__ = __webpack_require__("./src/app/pricing/add-edit-pricing/add-pricing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__surging_add_edit_surging_add_surging_component__ = __webpack_require__("./src/app/surging/add-edit-surging/add-surging.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__surging_surging_component__ = __webpack_require__("./src/app/surging/surging.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__cabs_add_edit_cab_add_edit_cab_component__ = __webpack_require__("./src/app/cabs/add-edit-cab/add-edit-cab.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__vendor_add_edit_vendor_add_edit_vendor_component__ = __webpack_require__("./src/app/vendor/add-edit-vendor/add-edit-vendor.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__delivery_tracking_tracking_component__ = __webpack_require__("./src/app/delivery/tracking/tracking.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__report_cabs_cabs_report_component__ = __webpack_require__("./src/app/report/cabs/cabs-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__report_driver_driver_report_component__ = __webpack_require__("./src/app/report/driver/driver-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__report_vendor_vendor_report_component__ = __webpack_require__("./src/app/report/vendor/vendor-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__report_trips_trips_report_component__ = __webpack_require__("./src/app/report/trips/trips-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__finance_vendor_vendor_finance_component__ = __webpack_require__("./src/app/finance/vendor/vendor-finance.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__finance_driver_driver_finance_component__ = __webpack_require__("./src/app/finance/driver/driver-finance.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__finance_rider_rider_finance_component__ = __webpack_require__("./src/app/finance/rider/rider-finance.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__finance_settlement_settlement_finance_component__ = __webpack_require__("./src/app/finance/settlement/settlement-finance.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -73,6 +79,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+// Reporting modules
+
+
+
+
+// Finance Module
 
 
 
@@ -113,8 +127,8 @@ const routes = [
         path: 'vendor',
         component: __WEBPACK_IMPORTED_MODULE_9__vendor_vendor_component__["a" /* VendorComponent */]
     },
-    { path: 'vendor/add', component: __WEBPACK_IMPORTED_MODULE_22__vendor_add_edit_vendor_add_edit_vendor_component__["a" /* AddEditVendorComponent */] },
-    { path: 'vendor/edit/:id', component: __WEBPACK_IMPORTED_MODULE_22__vendor_add_edit_vendor_add_edit_vendor_component__["a" /* AddEditVendorComponent */] },
+    { path: 'vendor/add', component: __WEBPACK_IMPORTED_MODULE_20__vendor_add_edit_vendor_add_edit_vendor_component__["a" /* AddEditVendorComponent */] },
+    { path: 'vendor/edit/:id', component: __WEBPACK_IMPORTED_MODULE_20__vendor_add_edit_vendor_add_edit_vendor_component__["a" /* AddEditVendorComponent */] },
     {
         path: 'booking',
         component: __WEBPACK_IMPORTED_MODULE_10__booking_booking_component__["a" /* BookingComponent */]
@@ -132,33 +146,57 @@ const routes = [
         component: __WEBPACK_IMPORTED_MODULE_13__rider_rider_component__["a" /* RiderComponent */]
     },
     {
-        path: 'report',
-        component: __WEBPACK_IMPORTED_MODULE_14__report_report_component__["a" /* ReportComponent */]
+        path: 'cabsReport',
+        component: __WEBPACK_IMPORTED_MODULE_22__report_cabs_cabs_report_component__["a" /* CabsReportComponent */]
     },
     {
-        path: 'finance',
-        component: __WEBPACK_IMPORTED_MODULE_15__finance_finance_component__["a" /* FinanceComponent */]
+        path: 'vendorReport',
+        component: __WEBPACK_IMPORTED_MODULE_24__report_vendor_vendor_report_component__["a" /* VendorReportComponent */]
+    },
+    {
+        path: 'driverReport',
+        component: __WEBPACK_IMPORTED_MODULE_23__report_driver_driver_report_component__["a" /* DriverReportComponent */]
+    },
+    {
+        path: 'tripsReport',
+        component: __WEBPACK_IMPORTED_MODULE_25__report_trips_trips_report_component__["a" /* TripsReportComponent */]
+    },
+    {
+        path: 'accountVendor',
+        component: __WEBPACK_IMPORTED_MODULE_26__finance_vendor_vendor_finance_component__["a" /* VendorFinanceComponent */]
+    },
+    {
+        path: 'accountRider',
+        component: __WEBPACK_IMPORTED_MODULE_28__finance_rider_rider_finance_component__["a" /* RiderFinanceComponent */]
+    },
+    {
+        path: 'accountDriver',
+        component: __WEBPACK_IMPORTED_MODULE_27__finance_driver_driver_finance_component__["a" /* DriverFinanceComponent */]
+    },
+    {
+        path: 'accountSettlement',
+        component: __WEBPACK_IMPORTED_MODULE_29__finance_settlement_settlement_finance_component__["a" /* SettlementFinanceComponent */]
     },
     {
         path: 'delivery',
-        component: __WEBPACK_IMPORTED_MODULE_16__delivery_delivery_component__["a" /* DeliveryComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_14__delivery_delivery_component__["a" /* DeliveryComponent */]
     },
     {
         path: 'tracking',
-        component: __WEBPACK_IMPORTED_MODULE_23__delivery_tracking_tracking_component__["a" /* DSTrackingComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_21__delivery_tracking_tracking_component__["a" /* DSTrackingComponent */]
     },
-    { path: 'user/add', component: __WEBPACK_IMPORTED_MODULE_17__user_add_user_add_user_component__["a" /* AddUserComponent */] },
-    { path: 'user/edit/:id', component: __WEBPACK_IMPORTED_MODULE_17__user_add_user_add_user_component__["a" /* AddUserComponent */] },
-    { path: 'price/add', component: __WEBPACK_IMPORTED_MODULE_18__pricing_add_edit_pricing_add_pricing_component__["a" /* AddPricingComponent */] },
-    { path: 'price/edit/:pricingId', component: __WEBPACK_IMPORTED_MODULE_18__pricing_add_edit_pricing_add_pricing_component__["a" /* AddPricingComponent */] },
+    { path: 'user/add', component: __WEBPACK_IMPORTED_MODULE_15__user_add_user_add_user_component__["a" /* AddUserComponent */] },
+    { path: 'user/edit/:id', component: __WEBPACK_IMPORTED_MODULE_15__user_add_user_add_user_component__["a" /* AddUserComponent */] },
+    { path: 'price/add', component: __WEBPACK_IMPORTED_MODULE_16__pricing_add_edit_pricing_add_pricing_component__["a" /* AddPricingComponent */] },
+    { path: 'price/edit/:pricingId', component: __WEBPACK_IMPORTED_MODULE_16__pricing_add_edit_pricing_add_pricing_component__["a" /* AddPricingComponent */] },
     {
         path: 'surging',
-        component: __WEBPACK_IMPORTED_MODULE_20__surging_surging_component__["a" /* SurgingComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_18__surging_surging_component__["a" /* SurgingComponent */]
     },
-    { path: 'surge/add', component: __WEBPACK_IMPORTED_MODULE_19__surging_add_edit_surging_add_surging_component__["a" /* AddEditSurgingComponent */] },
-    { path: 'surge/edit/:surgeId', component: __WEBPACK_IMPORTED_MODULE_19__surging_add_edit_surging_add_surging_component__["a" /* AddEditSurgingComponent */] },
-    { path: 'cab/add', component: __WEBPACK_IMPORTED_MODULE_21__cabs_add_edit_cab_add_edit_cab_component__["a" /* AddEditCabComponent */] },
-    { path: 'cab/edit/:cabId', component: __WEBPACK_IMPORTED_MODULE_21__cabs_add_edit_cab_add_edit_cab_component__["a" /* AddEditCabComponent */] }
+    { path: 'surge/add', component: __WEBPACK_IMPORTED_MODULE_17__surging_add_edit_surging_add_surging_component__["a" /* AddEditSurgingComponent */] },
+    { path: 'surge/edit/:surgeId', component: __WEBPACK_IMPORTED_MODULE_17__surging_add_edit_surging_add_surging_component__["a" /* AddEditSurgingComponent */] },
+    { path: 'cab/add', component: __WEBPACK_IMPORTED_MODULE_19__cabs_add_edit_cab_add_edit_cab_component__["a" /* AddEditCabComponent */] },
+    { path: 'cab/edit/:cabId', component: __WEBPACK_IMPORTED_MODULE_19__cabs_add_edit_cab_add_edit_cab_component__["a" /* AddEditCabComponent */] }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -255,21 +293,27 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pricing_pricing_component__ = __webpack_require__("./src/app/pricing/pricing.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__cabs_cabs_component__ = __webpack_require__("./src/app/cabs/cabs.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__rider_rider_component__ = __webpack_require__("./src/app/rider/rider.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__report_report_component__ = __webpack_require__("./src/app/report/report.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__finance_finance_component__ = __webpack_require__("./src/app/finance/finance.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__delivery_delivery_component__ = __webpack_require__("./src/app/delivery/delivery.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__common_http_service__ = __webpack_require__("./src/app/common/http.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35_angular_alert_module__ = __webpack_require__("./node_modules/angular-alert-module/fesm2015/alerts.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__ng_bootstrap_ng_bootstrap__ = __webpack_require__("./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__user_add_user_add_user_component__ = __webpack_require__("./src/app/user/add-user/add-user.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pricing_add_edit_pricing_add_pricing_component__ = __webpack_require__("./src/app/pricing/add-edit-pricing/add-pricing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__surging_add_edit_surging_add_surging_component__ = __webpack_require__("./src/app/surging/add-edit-surging/add-surging.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__surging_surging_component__ = __webpack_require__("./src/app/surging/surging.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__common_api_service__ = __webpack_require__("./src/app/common/api.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__cabs_add_edit_cab_add_edit_cab_component__ = __webpack_require__("./src/app/cabs/add-edit-cab/add-edit-cab.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__vendor_add_edit_vendor_add_edit_vendor_component__ = __webpack_require__("./src/app/vendor/add-edit-vendor/add-edit-vendor.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__agm_core__ = __webpack_require__("./node_modules/@agm/core/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__delivery_tracking_tracking_component__ = __webpack_require__("./src/app/delivery/tracking/tracking.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__delivery_delivery_component__ = __webpack_require__("./src/app/delivery/delivery.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__common_http_service__ = __webpack_require__("./src/app/common/http.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33_angular_alert_module__ = __webpack_require__("./node_modules/angular-alert-module/fesm2015/alerts.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ng_bootstrap_ng_bootstrap__ = __webpack_require__("./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__user_add_user_add_user_component__ = __webpack_require__("./src/app/user/add-user/add-user.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pricing_add_edit_pricing_add_pricing_component__ = __webpack_require__("./src/app/pricing/add-edit-pricing/add-pricing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__surging_add_edit_surging_add_surging_component__ = __webpack_require__("./src/app/surging/add-edit-surging/add-surging.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__surging_surging_component__ = __webpack_require__("./src/app/surging/surging.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__common_api_service__ = __webpack_require__("./src/app/common/api.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__cabs_add_edit_cab_add_edit_cab_component__ = __webpack_require__("./src/app/cabs/add-edit-cab/add-edit-cab.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__vendor_add_edit_vendor_add_edit_vendor_component__ = __webpack_require__("./src/app/vendor/add-edit-vendor/add-edit-vendor.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__agm_core__ = __webpack_require__("./node_modules/@agm/core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__delivery_tracking_tracking_component__ = __webpack_require__("./src/app/delivery/tracking/tracking.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__report_cabs_cabs_report_component__ = __webpack_require__("./src/app/report/cabs/cabs-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__report_driver_driver_report_component__ = __webpack_require__("./src/app/report/driver/driver-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__report_vendor_vendor_report_component__ = __webpack_require__("./src/app/report/vendor/vendor-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__report_trips_trips_report_component__ = __webpack_require__("./src/app/report/trips/trips-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__finance_vendor_vendor_finance_component__ = __webpack_require__("./src/app/finance/vendor/vendor-finance.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__finance_driver_driver_finance_component__ = __webpack_require__("./src/app/finance/driver/driver-finance.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__finance_rider_rider_finance_component__ = __webpack_require__("./src/app/finance/rider/rider-finance.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__finance_settlement_settlement_finance_component__ = __webpack_require__("./src/app/finance/settlement/settlement-finance.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -321,6 +365,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+// Reporting Modules
+
+
+
+
+// Finance Module
+
+
 
 
 let AppModule = class AppModule {
@@ -346,16 +398,22 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_28__pricing_pricing_component__["a" /* PricingComponent */],
             __WEBPACK_IMPORTED_MODULE_29__cabs_cabs_component__["a" /* CabsComponent */],
             __WEBPACK_IMPORTED_MODULE_30__rider_rider_component__["a" /* RiderComponent */],
-            __WEBPACK_IMPORTED_MODULE_31__report_report_component__["a" /* ReportComponent */],
-            __WEBPACK_IMPORTED_MODULE_32__finance_finance_component__["a" /* FinanceComponent */],
-            __WEBPACK_IMPORTED_MODULE_33__delivery_delivery_component__["a" /* DeliveryComponent */],
-            __WEBPACK_IMPORTED_MODULE_37__user_add_user_add_user_component__["a" /* AddUserComponent */],
-            __WEBPACK_IMPORTED_MODULE_38__pricing_add_edit_pricing_add_pricing_component__["a" /* AddPricingComponent */],
-            __WEBPACK_IMPORTED_MODULE_39__surging_add_edit_surging_add_surging_component__["a" /* AddEditSurgingComponent */],
-            __WEBPACK_IMPORTED_MODULE_40__surging_surging_component__["a" /* SurgingComponent */],
-            __WEBPACK_IMPORTED_MODULE_42__cabs_add_edit_cab_add_edit_cab_component__["a" /* AddEditCabComponent */],
-            __WEBPACK_IMPORTED_MODULE_43__vendor_add_edit_vendor_add_edit_vendor_component__["a" /* AddEditVendorComponent */],
-            __WEBPACK_IMPORTED_MODULE_45__delivery_tracking_tracking_component__["a" /* DSTrackingComponent */]
+            __WEBPACK_IMPORTED_MODULE_44__report_cabs_cabs_report_component__["a" /* CabsReportComponent */],
+            __WEBPACK_IMPORTED_MODULE_48__finance_vendor_vendor_finance_component__["a" /* VendorFinanceComponent */],
+            __WEBPACK_IMPORTED_MODULE_31__delivery_delivery_component__["a" /* DeliveryComponent */],
+            __WEBPACK_IMPORTED_MODULE_35__user_add_user_add_user_component__["a" /* AddUserComponent */],
+            __WEBPACK_IMPORTED_MODULE_36__pricing_add_edit_pricing_add_pricing_component__["a" /* AddPricingComponent */],
+            __WEBPACK_IMPORTED_MODULE_37__surging_add_edit_surging_add_surging_component__["a" /* AddEditSurgingComponent */],
+            __WEBPACK_IMPORTED_MODULE_38__surging_surging_component__["a" /* SurgingComponent */],
+            __WEBPACK_IMPORTED_MODULE_40__cabs_add_edit_cab_add_edit_cab_component__["a" /* AddEditCabComponent */],
+            __WEBPACK_IMPORTED_MODULE_41__vendor_add_edit_vendor_add_edit_vendor_component__["a" /* AddEditVendorComponent */],
+            __WEBPACK_IMPORTED_MODULE_43__delivery_tracking_tracking_component__["a" /* DSTrackingComponent */],
+            __WEBPACK_IMPORTED_MODULE_45__report_driver_driver_report_component__["a" /* DriverReportComponent */],
+            __WEBPACK_IMPORTED_MODULE_46__report_vendor_vendor_report_component__["a" /* VendorReportComponent */],
+            __WEBPACK_IMPORTED_MODULE_47__report_trips_trips_report_component__["a" /* TripsReportComponent */],
+            __WEBPACK_IMPORTED_MODULE_50__finance_rider_rider_finance_component__["a" /* RiderFinanceComponent */],
+            __WEBPACK_IMPORTED_MODULE_49__finance_driver_driver_finance_component__["a" /* DriverFinanceComponent */],
+            __WEBPACK_IMPORTED_MODULE_51__finance_settlement_settlement_finance_component__["a" /* SettlementFinanceComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -367,15 +425,15 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_18_angular_datatables__["b" /* DataTablesModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* ReactiveFormsModule */],
             __WEBPACK_IMPORTED_MODULE_24_ng4_loading_spinner__["Ng4LoadingSpinnerModule"].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_35_angular_alert_module__["a" /* AlertsModule */].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_36__ng_bootstrap_ng_bootstrap__["c" /* NgbModule */].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_44__agm_core__["a" /* AgmCoreModule */].forRoot({
+            __WEBPACK_IMPORTED_MODULE_33_angular_alert_module__["a" /* AlertsModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_34__ng_bootstrap_ng_bootstrap__["c" /* NgbModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_42__agm_core__["a" /* AgmCoreModule */].forRoot({
                 // please get your own API key here:
                 // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
                 apiKey: 'AIzaSyDVttFh9cUbhvjKM0Vscrk-X7CmSXCzq24'
             })
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_13__common_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_19__common_driver_service__["a" /* DriverService */], __WEBPACK_IMPORTED_MODULE_20__common_service_file_upload_service__["a" /* FileUploadService */], __WEBPACK_IMPORTED_MODULE_22__common_baseApi_service__["a" /* BaseApiService */], __WEBPACK_IMPORTED_MODULE_34__common_http_service__["a" /* HttpService */], __WEBPACK_IMPORTED_MODULE_41__common_api_service__["a" /* ApiService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_13__common_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_19__common_driver_service__["a" /* DriverService */], __WEBPACK_IMPORTED_MODULE_20__common_service_file_upload_service__["a" /* FileUploadService */], __WEBPACK_IMPORTED_MODULE_22__common_baseApi_service__["a" /* BaseApiService */], __WEBPACK_IMPORTED_MODULE_32__common_http_service__["a" /* HttpService */], __WEBPACK_IMPORTED_MODULE_39__common_api_service__["a" /* ApiService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -1790,14 +1848,14 @@ DeliveryComponent = __decorate([
 /***/ "./src/app/delivery/tracking/tracking.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "agm-map {\r\n  height: 500px;\r\n}\r\n\r\n\r\n* {\r\n  font-family: Lato;\r\n}\r\n\r\n\r\na {\r\n  color: darkblue;\r\n}"
+module.exports = "agm-map {\n  height: 500px;\n}\n\n\n* {\n  font-family: Lato;\n}\n\n\na {\n  color: darkblue;\n}"
 
 /***/ }),
 
 /***/ "./src/app/delivery/tracking/tracking.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Delivery Tracking</h1>\r\n\r\n<agm-map \r\n  [latitude]=\"lat\"\r\n  [longitude]=\"lng\"\r\n  [zoom]=\"zoom\"\r\n  [disableDefaultUI]=\"false\"\r\n  [zoomControl]=\"false\"\r\n  (mapClick)=\"mapClicked($event)\">\r\n\r\n  <agm-marker \r\n      *ngFor=\"let m of markers; let i = index\"\r\n      (markerClick)=\"clickedMarker(m.label, i)\"\r\n      [latitude]=\"m.lat\"\r\n      [longitude]=\"m.lng\"\r\n      [label]=\"m.label\"\r\n      [markerDraggable]=\"m.draggable\"\r\n      (dragEnd)=\"markerDragEnd(m, $event)\">\r\n      \r\n    <agm-info-window>\r\n      <strong>InfoWindow content</strong>\r\n    </agm-info-window>\r\n    \r\n  </agm-marker>\r\n  \r\n  <agm-circle [latitude]=\"lat + 0.3\" [longitude]=\"lng\" \r\n      [radius]=\"5000\"\r\n      [fillColor]=\"'red'\"\r\n      [circleDraggable]=\"true\"\r\n      [editable]=\"true\">\r\n  </agm-circle>\r\n\r\n</agm-map>"
+module.exports = "<h1>Delivery Tracking</h1>\n\n<agm-map \n  [latitude]=\"lat\"\n  [longitude]=\"lng\"\n  [zoom]=\"zoom\"\n  [disableDefaultUI]=\"false\"\n  [zoomControl]=\"false\"\n  (mapClick)=\"mapClicked($event)\">\n\n  <agm-marker \n      *ngFor=\"let m of markers; let i = index\"\n      (markerClick)=\"clickedMarker(m.label, i)\"\n      [latitude]=\"m.lat\"\n      [longitude]=\"m.lng\"\n      [label]=\"m.label\"\n      [markerDraggable]=\"m.draggable\"\n      (dragEnd)=\"markerDragEnd(m, $event)\">\n      \n    <agm-info-window>\n      <strong>InfoWindow content</strong>\n    </agm-info-window>\n    \n  </agm-marker>\n  \n  <agm-circle [latitude]=\"lat + 0.3\" [longitude]=\"lng\" \n      [radius]=\"5000\"\n      [fillColor]=\"'red'\"\n      [circleDraggable]=\"true\"\n      [editable]=\"true\">\n  </agm-circle>\n\n</agm-map>"
 
 /***/ }),
 
@@ -2414,25 +2472,25 @@ class AddDriverDataModel {
 
 /***/ }),
 
-/***/ "./src/app/finance/finance.component.css":
+/***/ "./src/app/finance/driver/driver-finance.component.css":
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/finance/finance.component.html":
+/***/ "./src/app/finance/driver/driver-finance.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  finance works!\r\n</p>\r\n"
+module.exports = "<p>\r\n  Driver finance under construction!\r\n</p>\r\n"
 
 /***/ }),
 
-/***/ "./src/app/finance/finance.component.ts":
+/***/ "./src/app/finance/driver/driver-finance.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FinanceComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DriverFinanceComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm2015/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2444,20 +2502,167 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-let FinanceComponent = class FinanceComponent {
+let DriverFinanceComponent = class DriverFinanceComponent {
     constructor() { }
     ngOnInit() {
         console.log(sessionStorage.getItem('authSuccess'));
     }
 };
-FinanceComponent = __decorate([
+DriverFinanceComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-finance',
-        template: __webpack_require__("./src/app/finance/finance.component.html"),
-        styles: [__webpack_require__("./src/app/finance/finance.component.css")]
+        template: __webpack_require__("./src/app/finance/driver/driver-finance.component.html"),
+        styles: [__webpack_require__("./src/app/finance/driver/driver-finance.component.css")]
     }),
     __metadata("design:paramtypes", [])
-], FinanceComponent);
+], DriverFinanceComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/finance/rider/rider-finance.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/finance/rider/rider-finance.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  Rider finance under construction!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/finance/rider/rider-finance.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RiderFinanceComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm2015/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+let RiderFinanceComponent = class RiderFinanceComponent {
+    constructor() { }
+    ngOnInit() {
+        console.log(sessionStorage.getItem('authSuccess'));
+    }
+};
+RiderFinanceComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-finance',
+        template: __webpack_require__("./src/app/finance/rider/rider-finance.component.html"),
+        styles: [__webpack_require__("./src/app/finance/rider/rider-finance.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], RiderFinanceComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/finance/settlement/settlement-finance.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/finance/settlement/settlement-finance.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  Settlement finance under construction!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/finance/settlement/settlement-finance.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettlementFinanceComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm2015/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+let SettlementFinanceComponent = class SettlementFinanceComponent {
+    constructor() { }
+    ngOnInit() {
+        console.log(sessionStorage.getItem('authSuccess'));
+    }
+};
+SettlementFinanceComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-finance',
+        template: __webpack_require__("./src/app/finance/settlement/settlement-finance.component.html"),
+        styles: [__webpack_require__("./src/app/finance/settlement/settlement-finance.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], SettlementFinanceComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/finance/vendor/vendor-finance.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/finance/vendor/vendor-finance.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  Vendor finance under construction!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/finance/vendor/vendor-finance.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VendorFinanceComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm2015/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+let VendorFinanceComponent = class VendorFinanceComponent {
+    constructor() { }
+    ngOnInit() {
+        console.log(sessionStorage.getItem('authSuccess'));
+    }
+};
+VendorFinanceComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-finance',
+        template: __webpack_require__("./src/app/finance/vendor/vendor-finance.component.html"),
+        styles: [__webpack_require__("./src/app/finance/vendor/vendor-finance.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], VendorFinanceComponent);
 
 
 
@@ -2759,7 +2964,7 @@ module.exports = "/* \r\n@media (min-width: 992px) {\r\n    .navbar-expand-lg .n
 /***/ "./src/app/nav/nav.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n    <span class=\"d-n-menu__logo-img\">\r\n        <img src=\"assets/viewlogo.png\" width=\"80\" height=\"45\" alt=\"Taxi System\">\r\n    </span>\r\n    <!-- <a class=\"navbar-brand\" href=\"#\">Navbar</a> -->\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\"\r\n        aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <ng-template [ngIf]=\"authService.getMockResponse() || userLoginSuccess\">\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">\r\n            <ul class=\"navbar-nav\">\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/booking\" [routerLinkActive]=\"['active']\">Booking</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/activityDashboard\" [routerLinkActive]=\"['active']\">Activity Dashboard</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/user\" [routerLinkActive]=\"['active']\">User</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/vendor\" [routerLinkActive]=\"['active']\">Vendor</a>\r\n                </li>\r\n                <li class=\"nav-item dropdown\">\r\n                    <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        Price\r\n                    </a>\r\n                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                        <a class=\"dropdown-item\" routerLink=\"/pricing\" >Normal Pricing</a>\r\n                        <a class=\"dropdown-item\" routerLink=\"/surging\" >Surging Pricing</a>\r\n                    </div>\r\n                </li>\r\n\r\n                <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n                    <a class=\"nav-link\" routerLink=\"/driver\" (click)=\"setActive('Driver');\">Driver</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/cabs\" [routerLinkActive]=\"['active']\">Cabs</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/rider\" [routerLinkActive]=\"['active']\">Rider</a>\r\n                </li>\r\n                <li class=\"nav-item dropdown\">\r\n                    <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        Report\r\n                    </a>\r\n                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                        <a class=\"dropdown-item\" href=\"#\">Vendors Report</a>\r\n                        <a class=\"dropdown-item\" href=\"#\">Drivers Report</a>\r\n                        <a class=\"dropdown-item\" href=\"#\">Cabs Report</a>\r\n                        <a class=\"dropdown-item\" href=\"#\">Trips Report</a>\r\n                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown\">\r\n                    <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        Finance\r\n                    </a>\r\n                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                        <a class=\"dropdown-item\" href=\"#\">Account Riders</a>\r\n                        <a class=\"dropdown-item\" href=\"#\">Account Vendors</a>\r\n                        <a class=\"dropdown-item\" href=\"#\">Account Drivers</a>\r\n                        <a class=\"dropdown-item\" href=\"#\">Account Settlements</a>\r\n                    </div>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/delivery\" [routerLinkActive]=\"['active']\">Delivery System</a>\r\n                </li>\r\n                <li class=\"nav-item dropdown\" style=\"position: relative;left: 135px;\">\r\n                    <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLogoutLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        <i class=\"fa fa-user\" aria-hidden=\"true\"></i>\r\n                    </a>\r\n                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLogoutLink\">\r\n                        <a style=\"cursor: pointer\" class=\"dropdown-item\" (click)=\"logoutUser()\">Logout</a>\r\n                        <a class=\"dropdown-item\" (click)=\"changePassword()\">Change Passwords</a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </ng-template>\r\n</nav>"
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n    <span class=\"d-n-menu__logo-img\">\r\n        <img src=\"assets/viewlogo.png\" width=\"80\" height=\"45\" alt=\"Taxi System\">\r\n    </span>\r\n    <!-- <a class=\"navbar-brand\" href=\"#\">Navbar</a> -->\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\"\r\n        aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <ng-template [ngIf]=\"authService.getMockResponse() || userLoginSuccess\">\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">\r\n            <ul class=\"navbar-nav\">\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/booking\" [routerLinkActive]=\"['active']\">Booking</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/activityDashboard\" [routerLinkActive]=\"['active']\">Activity Dashboard</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/user\" [routerLinkActive]=\"['active']\">User</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/vendor\" [routerLinkActive]=\"['active']\">Vendor</a>\r\n                </li>\r\n                <li class=\"nav-item dropdown\">\r\n                    <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        Price\r\n                    </a>\r\n                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                        <a class=\"dropdown-item\" routerLink=\"/pricing\" >Normal Pricing</a>\r\n                        <a class=\"dropdown-item\" routerLink=\"/surging\" >Surging Pricing</a>\r\n                    </div>\r\n                </li>\r\n\r\n                <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n                    <a class=\"nav-link\" routerLink=\"/driver\" (click)=\"setActive('Driver');\">Driver</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/cabs\" [routerLinkActive]=\"['active']\">Cabs</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/rider\" [routerLinkActive]=\"['active']\">Rider</a>\r\n                </li>\r\n                <li class=\"nav-item dropdown\">\r\n                    <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        Report\r\n                    </a>\r\n                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                        <a class=\"dropdown-item\" routerLink=\"/vendorReport\" [routerLinkActive]=\"['active']\">Vendors Report</a>\r\n                        <a class=\"dropdown-item\" routerLink=\"/driverReport\" [routerLinkActive]=\"['active']\">Drivers Report</a>\r\n                        <a class=\"dropdown-item\" routerLink=\"/cabsReport\" [routerLinkActive]=\"['active']\">Cabs Report</a>\r\n                        <a class=\"dropdown-item\" routerLink=\"/tripsReport\" [routerLinkActive]=\"['active']\">Trips Report</a>\r\n                    </div>\r\n                </li>\r\n                <li class=\"nav-item dropdown\">\r\n                    <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        Finance\r\n                    </a>\r\n                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                        <a class=\"dropdown-item\" routerLink=\"/accountRider\" [routerLinkActive]=\"['active']\">Account Riders</a>\r\n                        <a class=\"dropdown-item\" routerLink=\"/accountVendor\" [routerLinkActive]=\"['active']\">Account Vendors</a>\r\n                        <a class=\"dropdown-item\" routerLink=\"/accountDriver\" [routerLinkActive]=\"['active']\">Account Drivers</a>\r\n                        <a class=\"dropdown-item\" routerLink=\"/accountSettlement\" [routerLinkActive]=\"['active']\">Account Settlements</a>\r\n                    </div>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" routerLink=\"/delivery\" [routerLinkActive]=\"['active']\">Delivery System</a>\r\n                </li>\r\n                <li class=\"nav-item dropdown\" style=\"position: relative;left: 135px;\">\r\n                    <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLogoutLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        <i class=\"fa fa-user\" aria-hidden=\"true\"></i>\r\n                    </a>\r\n                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLogoutLink\">\r\n                        <a style=\"cursor: pointer\" class=\"dropdown-item\" (click)=\"logoutUser()\">Logout</a>\r\n                        <a class=\"dropdown-item\" (click)=\"changePassword()\">Change Passwords</a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </ng-template>\r\n</nav>"
 
 /***/ }),
 
@@ -3137,25 +3342,25 @@ PricingComponent = __decorate([
 
 /***/ }),
 
-/***/ "./src/app/report/report.component.css":
+/***/ "./src/app/report/cabs/cabs-report.component.css":
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/report/report.component.html":
+/***/ "./src/app/report/cabs/cabs-report.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  Rider works!\r\n</p>\r\n"
+module.exports = "<p>\r\n  Cabs Report under construction!\r\n</p>\r\n"
 
 /***/ }),
 
-/***/ "./src/app/report/report.component.ts":
+/***/ "./src/app/report/cabs/cabs-report.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CabsReportComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm2015/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3167,20 +3372,167 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-let ReportComponent = class ReportComponent {
+let CabsReportComponent = class CabsReportComponent {
     constructor() { }
     ngOnInit() {
         console.log(sessionStorage.getItem('authSuccess'));
     }
 };
-ReportComponent = __decorate([
+CabsReportComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-report',
-        template: __webpack_require__("./src/app/report/report.component.html"),
-        styles: [__webpack_require__("./src/app/report/report.component.css")]
+        template: __webpack_require__("./src/app/report/cabs/cabs-report.component.html"),
+        styles: [__webpack_require__("./src/app/report/cabs/cabs-report.component.css")]
     }),
     __metadata("design:paramtypes", [])
-], ReportComponent);
+], CabsReportComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/report/driver/driver-report.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/report/driver/driver-report.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  Driver Report under construction!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/report/driver/driver-report.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DriverReportComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm2015/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+let DriverReportComponent = class DriverReportComponent {
+    constructor() { }
+    ngOnInit() {
+        console.log(sessionStorage.getItem('authSuccess'));
+    }
+};
+DriverReportComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-report',
+        template: __webpack_require__("./src/app/report/driver/driver-report.component.html"),
+        styles: [__webpack_require__("./src/app/report/driver/driver-report.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], DriverReportComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/report/trips/trips-report.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/report/trips/trips-report.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  Trips Report under construction!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/report/trips/trips-report.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TripsReportComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm2015/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+let TripsReportComponent = class TripsReportComponent {
+    constructor() { }
+    ngOnInit() {
+        console.log(sessionStorage.getItem('authSuccess'));
+    }
+};
+TripsReportComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-report',
+        template: __webpack_require__("./src/app/report/trips/trips-report.component.html"),
+        styles: [__webpack_require__("./src/app/report/trips/trips-report.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], TripsReportComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/report/vendor/vendor-report.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/report/vendor/vendor-report.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  Vendor Report under construction!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/report/vendor/vendor-report.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VendorReportComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm2015/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+let VendorReportComponent = class VendorReportComponent {
+    constructor() { }
+    ngOnInit() {
+        console.log(sessionStorage.getItem('authSuccess'));
+    }
+};
+VendorReportComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-report',
+        template: __webpack_require__("./src/app/report/vendor/vendor-report.component.html"),
+        styles: [__webpack_require__("./src/app/report/vendor/vendor-report.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], VendorReportComponent);
 
 
 
