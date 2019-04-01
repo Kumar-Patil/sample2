@@ -315,6 +315,8 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__finance_rider_rider_finance_component__ = __webpack_require__("./src/app/finance/rider/rider-finance.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__finance_settlement_settlement_finance_component__ = __webpack_require__("./src/app/finance/settlement/settlement-finance.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52_ngx_toggle_switch__ = __webpack_require__("./node_modules/ngx-toggle-switch/ui-switch.es2015.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__shared_services_map_util_service__ = __webpack_require__("./src/app/shared/services/map.util.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__booking_map_ongoing_map_component__ = __webpack_require__("./src/app/booking/map/ongoing.map.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -377,6 +379,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -416,6 +420,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_50__finance_rider_rider_finance_component__["a" /* RiderFinanceComponent */],
             __WEBPACK_IMPORTED_MODULE_49__finance_driver_driver_finance_component__["a" /* DriverFinanceComponent */],
             __WEBPACK_IMPORTED_MODULE_51__finance_settlement_settlement_finance_component__["a" /* SettlementFinanceComponent */],
+            __WEBPACK_IMPORTED_MODULE_54__booking_map_ongoing_map_component__["a" /* OngoingMapComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_52_ngx_toggle_switch__["a" /* UiSwitchModule */],
@@ -437,7 +442,7 @@ AppModule = __decorate([
                 libraries: ['places']
             })
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_13__common_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_19__common_driver_service__["a" /* DriverService */], __WEBPACK_IMPORTED_MODULE_20__common_service_file_upload_service__["a" /* FileUploadService */], __WEBPACK_IMPORTED_MODULE_22__common_baseApi_service__["a" /* BaseApiService */], __WEBPACK_IMPORTED_MODULE_32__common_http_service__["a" /* HttpService */], __WEBPACK_IMPORTED_MODULE_39__common_api_service__["a" /* ApiService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_13__common_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_19__common_driver_service__["a" /* DriverService */], __WEBPACK_IMPORTED_MODULE_20__common_service_file_upload_service__["a" /* FileUploadService */], __WEBPACK_IMPORTED_MODULE_22__common_baseApi_service__["a" /* BaseApiService */], __WEBPACK_IMPORTED_MODULE_32__common_http_service__["a" /* HttpService */], __WEBPACK_IMPORTED_MODULE_39__common_api_service__["a" /* ApiService */], __WEBPACK_IMPORTED_MODULE_53__shared_services_map_util_service__["a" /* MapUtilService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -505,7 +510,7 @@ module.exports = "body {\r\n    background-color:#f0f0f0;\r\n }\r\n#page-wrap {\
 /***/ "./src/app/booking/booking.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"margin-bottom: 40px\">\r\n  <!-- <h1>Google Maps Places Autocomplete Using Angular 2</h1>\r\n  <div class=\"form-group\">\r\n <input type=\"text\" [(ngModel)]=\"destinaton_address\" placeholder=\"Search for Location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" class=\"form-control\" #search>\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <input type=\"text\" placeholder=\"Search for Location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" class=\"form-control\" #source>\r\n     </div> -->\r\n  <div class=\"row\">\r\n    <div class=\"col-xs-4 col-sm-4 col-md-4 col-lg-4\">\r\n      <div class=\"row\">\r\n        <div class=\"col-xs-12 col-sm-12\tcol-md-12 col-lg-12\">\r\n          <fieldset>\r\n              <legend style=\"width:auto; margin-bottom: 0px; color: #1f497d;\">New Booking</legend>\r\n              <form role=\"form\" class=\"form-inline\" #book=\"ngForm\">\r\n                <div class=\"margin-lr-0 padding-l-20\">\r\n                  <div class=\"form-group \">\r\n                    <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">phone</label>\r\n                    <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                        <input type=\"text\" name=\"phone\" [(ngModel)]=\"userData.phone\" [ngModelOptions]=\"{standalone: true}\" class=\"form-control\" width=\"70%\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"form-group \">\r\n                    <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">name</label>\r\n                    <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                      <input type=\"text\" name=\"name\" [(ngModel)]=\"userData.name\"   class=\"form-control\" width=\"70%\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"form-group \">\r\n                    <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">cust_id</label>\r\n                    <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                      <input type=\"text\" name=\"cust_id\" [(ngModel)]=\"userData.cust_id\"  class=\"form-control\" width=\"70%\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"form-group \">\r\n                    <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">address</label>\r\n                    <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                      <input type=\"text\" name=\"address\" [(ngModel)]=\"userData.address\" [ngModelOptions]=\"{standalone: true}\" class=\"form-control\" width=\"70%\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"form-group \">\r\n                    <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">email</label>\r\n                    <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                      <input type=\"text\" name=\"email\" [(ngModel)]=\"userData.email\"  class=\"form-control\" width=\"70%\"/>\r\n                    </div>\r\n                  </div>\r\n                  <!-- <div class=\"form-group \">\r\n                    <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">date</label>\r\n                    <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                      <input type=\"text\" name=\"date_time\" [(ngModel)]=\"userData.date_time\" [ngModelOptions]=\"{standalone: true}\" class=\"form-control\" width=\"70%\"/>\r\n                    </div>\r\n                  </div> -->\r\n                  <div class=\"form-group \">\r\n                    <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">remarks</label>\r\n                    <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                      <input type=\"text\" name=\"remarks\" [(ngModel)]=\"userData.remarks\" [ngModelOptions]=\"{standalone: true}\" class=\"form-control\" width=\"70%\"/>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"form-group\">\r\n                    <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">source</label>\r\n                    <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                      <!--<input type=\"text\" name=\"source\" class=\"form-control\" width=\"70%\"/> -->\r\n                      <input type=\"text\" placeholder=\"Search source Location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" [(ngModel)]=\"userData.source\" [ngModelOptions]=\"{standalone: true}\" class=\"form-control\" #source>\r\n                    </div>\r\n                  </div>\r\n                  <div class=\"form-group\">\r\n                    <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 25px\">destination</label>\r\n                    <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                      <!--<input type=\"text\" name=\"destionation\" class=\"form-control\" width=\"70%\"/>-->\r\n                      <input type=\"text\" placeholder=\"Search destination Location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" [(ngModel)]=\"userData.destinaton\" [ngModelOptions]=\"{standalone: true}\" class=\"form-control\" #destination>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </form>\r\n              <div class=\"row\" style=\"padding-top:20px; padding-bottom: 40px;\">\r\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\r\n                  <button type=\"button\" class=\"btn btn-default btn-sm\" style=\"margin: 0 20px\">cancel</button>\r\n                  <button type=\"button\" class=\"btn btn-danger btn-sm\" style=\"margin-left: 40px;\" (click)=\"addOrUpdateDriverData(userData)\">commit</button>\r\n                </div>\r\n              </div>\r\n          </fieldset>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    \r\n    \r\n      <div class=\"row\">\r\n          <div class=\"row\">\r\n              <div class=\"col-12\">\r\n                <div class=\"form-inline float-right\">\r\n                  <label for=\"status\" class=\"mr-sm-2\"> Select :</label>\r\n                  <div class=\"\">\r\n                    <select class=\"form-control form-control-sm mb-2 mr-sm-2\" id=\"role\" (change)=\"selectChangeHandler($event)\" [(ngModel)]=\"userData.role\"\r\n                      #statusId=\"ngModel\" name=\"role\" required>\r\n                      <option value=\"trips\">Ongoing Trips</option>\r\n                      <option value=\"users\">Users Online</option>\r\n                      <option value=\"cabs\">Cabs online</option>\r\n                      <option value=\"delivery\">Delivery Items Ongoing</option>\r\n                      <option value=\"all\">All</option>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n        <div class=\"col-xs-12 col-sm-12\tcol-md-12 col-lg-12\">\r\n            <agm-map [zoom] = \"4\" \r\n            [latitude]=\"20.5937\"\r\n            [longitude]=\"78.9629\"\r\n            >\r\n            <agm-marker\r\n              *ngFor=\"let coordinate of markers; let i=index\"\r\n              [latitude]=\"coordinate.lat\"\r\n              [longitude]=\"coordinate.lng\"\r\n              [iconUrl]=\"coordinate.iconUrl\"\r\n            ></agm-marker>\r\n           <!-- <agm-polyline\r\n             [visible]=\"true\"\r\n             [strokeWeight]=\"3\"\r\n             [strokeColor]=\"'#2196f3'\">\r\n              <agm-polyline-point\r\n                *ngFor=\"let coordinate of markers; let i=index\"\r\n                [latitude]=\"coordinate.lat\"\r\n                [longitude]=\"coordinate.lng\">\r\n              </agm-polyline-point>\r\n            </agm-polyline>\r\n          -->\r\n            </agm-map>\r\n        </div>\r\n      </div>\r\n  </div>\r\n  <hr/>\r\n  <div class=\"row\" style=\"padding-bottom: 40px;\">\r\n    <div class=\"col-xs-7 col-sm-7\tcol-md-7 col-lg-7\">\r\n      <fieldset>\r\n        <legend  visible=\"true\" style=\"width:auto; margin-bottom: 0px; color: #1f497d;\">System events</legend>\r\n        <div style=\"padding-bottom: 30px;\">\r\n          <div>This are keep printing the every major even of the system, such as when a user selects/searches a ride.</div>\r\n          <div>drivers accepts it, he reaches to pick up location, trip starts, trip ends,a driver of a customer cancels the trip and same for deliveries.</div>\r\n        </div>\r\n      </fieldset>\r\n    </div>\r\n    <div class=\"vl\" style=\"height: auto;padding-left: 10px; margin-top: 5px; position: relative; left: -10px;\"></div>\r\n    <div class=\"col-xs-4 col-sm-4\tcol-md-4 col-lg-4\" style=\"margin-top: 15px\">\r\n      <div>\r\n        <i class=\"fa fa-users fa-2x\" style=\"padding-left: 30px;\" aria-hidden=\"true\"></i>\r\n        <i class=\"fa fa-truck fa-2x\" style=\"padding-left: 30px;\" aria-hidden=\"true\"></i>\r\n        <i class=\"fa fa-taxi fa-2x\" style=\"padding-left: 30px;\" aria-hidden=\"true\"></i>\r\n        <i class=\"fa fa-user fa-2x\" style=\"padding-left: 30px;\" aria-hidden=\"true\"></i>\r\n      </div>\r\n      <div>\r\n          <fieldset>\r\n              <legend visible=\"true\" style=\"width:auto; margin-bottom: 0px; color: #1f497d;\">pricing</legend>\r\n              <div style=\"padding-left:20px;\">\r\n                <div> \r\n                  SURGE\r\n                  <span style=\"padding-left: 40px\">\r\n                      <ui-switch [(ngModel)]=\"surge\" (change)=\"surgePricing($event)\"></ui-switch>\r\n                  </span>\r\n                </div>\r\n                <div> BOOST\r\n                  <span style=\"padding-left: 40px\">\r\n                      <ui-switch [(ngModel)]=\"boost\" (change)=\"boostFare($event)\"></ui-switch>\r\n                  </span>\r\n                </div>\r\n              </div>\r\n          </fieldset>\r\n      </div>\r\n    </div>\r\n    \r\n  </div>\r\n  <div class=\"col-xs-4 col-sm-4\tcol-md-4 col-lg-4\">\r\n      <div class=\"row\">\r\n        <div class=\"col-xs-12 col-sm-12\tcol-md-12 col-lg-12\">\r\n          <h5 style=\"color: red\"> List of cabs with ongoing rides</h5>\r\n          <div>\r\n              <table class=\"table table-bordered\" >\r\n                  <thead style=\"font: bold;\">\r\n                    <tr>\r\n                      <th>cust Id</th>\r\n                      <th>Cust Name</th>\r\n                      <th>Cust Email</th>\r\n                      <th>Cust Phone</th>\r\n                      <th>Remarks</th>\r\n                      <th>Address</th>\r\n                      <th>Driver Name</th>\r\n                      <th>Source</th>\r\n                      <th>Destination</th>\r\n                      <th>Time elap</th>\r\n                      <th>ETA</th>\r\n                      <th>Status</th>\r\n                    </tr>\r\n                  </thead>\r\n                  <tbody>\r\n                    <tr *ngFor=\"let cab of cabs\">\r\n                      <td>{{cab.cust_id}}</td>\r\n                      <td>{{cab.driver}}</td>\r\n                      <td>{{cab.driver}}</td>\r\n                      <td>santoshkumarsdfd</td>\r\n                      <td>santoshkumarsdfd</td>\r\n                      <td>\r\n                        <span class=\"text-wrap\">{{cab.driver}}</span>\r\n                      </td>\r\n                      <td>\r\n                        <span class=\"text-wrap\">{{cab.driver}}</span>\r\n                      </td>\r\n                      <td>\r\n                        <span >{{cab.source}}</span>\r\n                      </td>\r\n                      <td>\r\n                        <span >{{cab.destination}}</span>\r\n                      </td>\r\n                      <td>\r\n                        <span class=\"text-wrap\">{{cab.time}}</span>\r\n                      </td>\r\n                      <td>\r\n                        <span class=\"text-wrap\">{{cab.eta}}</span>\r\n                      </td>\r\n                      <td>\r\n                        <span >{{cab.status}}</span>\r\n                      </td>\r\n                    </tr>\r\n                </table>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    \r\n</div>\r\n\r\n"
+module.exports = "<div style=\"margin-bottom: 40px\">\r\n  <!-- <h1>Google Maps Places Autocomplete Using Angular 2</h1>\r\n  <div class=\"form-group\">\r\n <input type=\"text\" [(ngModel)]=\"destinaton_address\" placeholder=\"Search for Location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" class=\"form-control\" #search>\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <input type=\"text\" placeholder=\"Search for Location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" class=\"form-control\" #source>\r\n     </div> -->\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-xs-12 col-sm-5 col-md-5 col-lg-5\">\r\n      <div class=\"row\">\r\n        <div class=\"col-xs-12 col-sm-12\tcol-md-12 col-lg-12\">\r\n          <fieldset>\r\n            <legend style=\"width:auto; margin-bottom: 0px; color: #1f497d;\">New Booking</legend>\r\n            <form role=\"form\" class=\"form-inline\" #book=\"ngForm\">\r\n              <div class=\"margin-lr-0 padding-l-20\">\r\n                <div class=\"form-group \">\r\n                  <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">phone</label>\r\n                  <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                    <input type=\"text\" name=\"phone\" [(ngModel)]=\"userData.phone\" [ngModelOptions]=\"{standalone: true}\" class=\"form-control\" width=\"70%\"\r\n                    />\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group \">\r\n                  <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">name</label>\r\n                  <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                    <input type=\"text\" name=\"name\" [(ngModel)]=\"userData.name\" class=\"form-control\" width=\"70%\" />\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group \">\r\n                  <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">cust_id</label>\r\n                  <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                    <input type=\"text\" name=\"cust_id\" [(ngModel)]=\"userData.cust_id\" class=\"form-control\" width=\"70%\" />\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group \">\r\n                  <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">address</label>\r\n                  <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                    <input type=\"text\" name=\"address\" [(ngModel)]=\"userData.address\" [ngModelOptions]=\"{standalone: true}\" class=\"form-control\"\r\n                      width=\"70%\" />\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group \">\r\n                  <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">email</label>\r\n                  <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                    <input type=\"text\" name=\"email\" [(ngModel)]=\"userData.email\" class=\"form-control\" width=\"70%\" />\r\n                  </div>\r\n                </div>\r\n                <!-- <div class=\"form-group \">\r\n                    <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">date</label>\r\n                    <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                      <input type=\"text\" name=\"date_time\" [(ngModel)]=\"userData.date_time\" [ngModelOptions]=\"{standalone: true}\" class=\"form-control\" width=\"70%\"/>\r\n                    </div>\r\n                  </div> -->\r\n                <div class=\"form-group \">\r\n                  <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">remarks</label>\r\n                  <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                    <input type=\"text\" name=\"remarks\" [(ngModel)]=\"userData.remarks\" [ngModelOptions]=\"{standalone: true}\" class=\"form-control\"\r\n                      width=\"70%\" />\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 15px\">source</label>\r\n                  <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                    <!--<input type=\"text\" name=\"source\" class=\"form-control\" width=\"70%\"/> -->\r\n                    <input type=\"text\" placeholder=\"Search source Location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" [(ngModel)]=\"userData.source\"\r\n                      [ngModelOptions]=\"{standalone: true}\" class=\"form-control\" #source>\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-xs-3 col-sm-3 col-md-3 col-lg-3 col-form-label padding-lr-0\" style=\"padding-bottom: 25px\">destination</label>\r\n                  <div class=\"col-xs-9 col-sm-9 col-md-9 col-lg-9\">\r\n                    <!--<input type=\"text\" name=\"destionation\" class=\"form-control\" width=\"70%\"/>-->\r\n                    <input type=\"text\" placeholder=\"Search destination Location\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" [(ngModel)]=\"userData.destinaton\"\r\n                      [ngModelOptions]=\"{standalone: true}\" class=\"form-control\" #destination>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </form>\r\n            <div class=\"row\" style=\"padding-top:20px; padding-bottom: 40px;\">\r\n              <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\r\n                <button type=\"button\" class=\"btn btn-default btn-sm\" style=\"margin: 0 20px\">cancel</button>\r\n                <button type=\"button\" class=\"btn btn-danger btn-sm\" style=\"margin-left: 40px;\" (click)=\"addOrUpdateDriverData(userData)\">commit</button>\r\n              </div>\r\n            </div>\r\n          </fieldset>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-xs-12 col-sm-7\tcol-md-7 col-lg-7\">\r\n      <ongoing-cabs></ongoing-cabs>\r\n    </div>\r\n    <div class=\"col-12\">\r\n      <div class=\"form-inline float-right\">\r\n        <label for=\"status\" class=\"mr-sm-2\"> Select :</label>\r\n        <div class=\"\">\r\n          <select class=\"form-control form-control-sm mb-2 mr-sm-2\" id=\"role\" (change)=\"selectChangeHandler($event)\" [(ngModel)]=\"userData.role\"\r\n            #statusId=\"ngModel\" name=\"role\" required>\r\n            <option value=\"trips\">Ongoing Trips</option>\r\n            <option value=\"users\">Users Online</option>\r\n            <option value=\"cabs\">Cabs online</option>\r\n            <option value=\"delivery\">Delivery Items Ongoing</option>\r\n            <option value=\"all\">All</option>\r\n          </select>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <hr/>\r\n  <div class=\"row\" style=\"padding-bottom: 40px;\">\r\n    <div class=\"col-xs-7 col-sm-7\tcol-md-7 col-lg-7\">\r\n      <fieldset>\r\n        <legend visible=\"true\" style=\"width:auto; margin-bottom: 0px; color: #1f497d;\">System events</legend>\r\n        <div style=\"padding-bottom: 30px;\">\r\n          <div>This are keep printing the every major even of the system, such as when a user selects/searches a ride.</div>\r\n          <div>drivers accepts it, he reaches to pick up location, trip starts, trip ends,a driver of a customer cancels the trip\r\n            and same for deliveries.</div>\r\n        </div>\r\n      </fieldset>\r\n    </div>\r\n    <div class=\"vl\" style=\"height: auto;padding-left: 10px; margin-top: 5px; position: relative; left: -10px;\"></div>\r\n    <div class=\"col-xs-4 col-sm-4\tcol-md-4 col-lg-4\" style=\"margin-top: 15px\">\r\n      <div>\r\n        <i class=\"fa fa-users fa-2x\" style=\"padding-left: 30px;\" aria-hidden=\"true\"></i>\r\n        <i class=\"fa fa-truck fa-2x\" style=\"padding-left: 30px;\" aria-hidden=\"true\"></i>\r\n        <i class=\"fa fa-taxi fa-2x\" style=\"padding-left: 30px;\" aria-hidden=\"true\"></i>\r\n        <i class=\"fa fa-user fa-2x\" style=\"padding-left: 30px;\" aria-hidden=\"true\"></i>\r\n      </div>\r\n      <div>\r\n        <fieldset>\r\n          <legend visible=\"true\" style=\"width:auto; margin-bottom: 0px; color: #1f497d;\">pricing</legend>\r\n          <div style=\"padding-left:20px;\">\r\n            <div>\r\n              SURGE\r\n              <span style=\"padding-left: 40px\">\r\n                <ui-switch [(ngModel)]=\"surge\" (change)=\"surgePricing($event)\"></ui-switch>\r\n              </span>\r\n            </div>\r\n            <div> BOOST\r\n              <span style=\"padding-left: 40px\">\r\n                <ui-switch [(ngModel)]=\"boost\" (change)=\"boostFare($event)\"></ui-switch>\r\n              </span>\r\n            </div>\r\n          </div>\r\n        </fieldset>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n  <div class=\"col-xs-4 col-sm-4\tcol-md-4 col-lg-4\">\r\n    <div class=\"row\">\r\n      <div class=\"col-xs-12 col-sm-12\tcol-md-12 col-lg-12\">\r\n        <h5 style=\"color: red\"> List of cabs with ongoing rides</h5>\r\n        <div>\r\n          <table class=\"table table-bordered\">\r\n            <thead style=\"font: bold;\">\r\n              <tr>\r\n                <th>cust Id</th>\r\n                <th>Cust Name</th>\r\n                <th>Cust Email</th>\r\n                <th>Cust Phone</th>\r\n                <th>Remarks</th>\r\n                <th>Address</th>\r\n                <th>Driver Name</th>\r\n                <th>Source</th>\r\n                <th>Destination</th>\r\n                <th>Time elap</th>\r\n                <th>ETA</th>\r\n                <th>Status</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr *ngFor=\"let cab of cabs\">\r\n                <td>{{cab.cust_id}}</td>\r\n                <td>{{cab.driver}}</td>\r\n                <td>{{cab.driver}}</td>\r\n                <td>santoshkumarsdfd</td>\r\n                <td>santoshkumarsdfd</td>\r\n                <td>\r\n                  <span class=\"text-wrap\">{{cab.driver}}</span>\r\n                </td>\r\n                <td>\r\n                  <span class=\"text-wrap\">{{cab.driver}}</span>\r\n                </td>\r\n                <td>\r\n                  <span>{{cab.source}}</span>\r\n                </td>\r\n                <td>\r\n                  <span>{{cab.destination}}</span>\r\n                </td>\r\n                <td>\r\n                  <span class=\"text-wrap\">{{cab.time}}</span>\r\n                </td>\r\n                <td>\r\n                  <span class=\"text-wrap\">{{cab.eta}}</span>\r\n                </td>\r\n                <td>\r\n                  <span>{{cab.status}}</span>\r\n                </td>\r\n              </tr>\r\n          </table>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -716,6 +721,143 @@ BookingComponent = __decorate([
         __WEBPACK_IMPORTED_MODULE_6__common_http_service__["a" /* HttpService */],
         __WEBPACK_IMPORTED_MODULE_7_ng4_loading_spinner__["Ng4LoadingSpinnerService"]])
 ], BookingComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/booking/map/ongoing.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".agm-map-container {\r\n    height: 300px;\r\n  }\r\n\r\nagm-map {\r\n    height: 500px;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/booking/map/ongoing.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n    <div class=\"col-12 col-xs-12 live-map\">        \r\n        <agm-map [latitude]=\"min('lat')\" [longitude]=\"max('lng')\" [zoom]=\"zoom\" >\r\n            <agm-marker *ngFor=\"let m of markers; let i = index\" (markerClick)=\"clickedMarker(m.label, i)\" [latitude]=\"m.lat\" [longitude]=\"m.lng\"\r\n                [label]=\"m.label\" [iconUrl]=\"m.icon\" [markerDraggable]=\"m.draggable\" (dragEnd)=\"markerDragEnd(m, $event)\">\r\n                <agm-info-window>\r\n                    <div>\r\n                        <strong>Driver Name</strong>\r\n                        <div>ID: {{m.label}}</div>\r\n                    </div>\r\n                </agm-info-window>\r\n                <span>test</span>\r\n            </agm-marker>\r\n        </agm-map>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/booking/map/ongoing.map.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OngoingMapComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm2015/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_map_util_service__ = __webpack_require__("./src/app/shared/services/map.util.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+let OngoingMapComponent = class OngoingMapComponent {
+    constructor(mapUtilService) {
+        this.mapUtilService = mapUtilService;
+        this.zoom = 14;
+        this.multiple = 1;
+        this.lngMutltiple = -1;
+        // mapClicked($event: any) {
+        //     this.markers.push({
+        //         lat: $event.coords.lat,
+        //         lng: $event.coords.lng,
+        //         draggable: true
+        //     });
+        // }
+        // markerDragEnd(m: Marker, $event: MouseEvent) {
+        //     console.log('dragEnd', m, $event);
+        // }
+        this.markers = [
+            {
+                lat: 51.373858,
+                lng: 7.215982,
+                label: new MarkerLabel('1'),
+                draggable: true,
+                icon: './assets/icons/car-marker-0.svg'
+            },
+            {
+                lat: 51.373858,
+                lng: 7.215982,
+                label: new MarkerLabel('2'),
+                draggable: false,
+                icon: './assets/icons/car-marker-0.svg'
+            },
+            {
+                lat: 51.373858,
+                lng: 7.215982,
+                label: new MarkerLabel('3'),
+                draggable: true,
+                icon: './assets/icons/car-marker-0.svg'
+            }
+        ];
+    }
+    clickedMarker(label, index) {
+        console.log(`clicked the marker: ${label || index}`);
+    }
+    ngOnInit() {
+        // let svg = new SVGElement('');
+        // svg.setAttribute('', '');
+        let updateTimeout = () => {
+            setTimeout(() => {
+                this.multiple++;
+                this.updateMap();
+                console.log('init updateTimeout');
+                updateTimeout();
+            }, 5000);
+        };
+        console.log('init');
+        updateTimeout();
+    }
+    updateMap() {
+        for (let i = 0; i < this.markers.length; i++) {
+            this.lngMutltiple = Math.pow(-1, this.multiple % 3);
+            const lat = this.markers[i].lat + 0.000121 * Math.pow(5, (this.multiple + i) % 3) * this.lngMutltiple;
+            const lng = this.markers[i].lng + 0.000821 * Math.pow(3, (this.multiple + i) % 3) * this.lngMutltiple;
+            const oldLoc = { lat: this.markers[i].lat, lng: this.markers[i].lng };
+            const newLoc = { lat: lat, lng: lng };
+            const angle = this.mapUtilService.angleFromCoordinate(oldLoc, newLoc);
+            console.log(angle);
+            const iconUrl = this.mapUtilService.getIconUrl(angle);
+            console.log(iconUrl);
+            this.markers[i].icon = iconUrl;
+            this.mapUtilService.transition(this.markers[i], [lat, lng]);
+        }
+    }
+    max(coordType) {
+        return Math.max(...this.markers.map(marker => marker[coordType]));
+    }
+    min(coordType) {
+        return Math.min(...this.markers.map(marker => marker[coordType]));
+    }
+};
+OngoingMapComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'ongoing-cabs',
+        template: __webpack_require__("./src/app/booking/map/ongoing.component.html"),
+        styles: [__webpack_require__("./src/app/booking/map/ongoing.component.css")],
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_services_map_util_service__["a" /* MapUtilService */]])
+], OngoingMapComponent);
+
+class MarkerLabel {
+    constructor(text) {
+        this.color = '#f40b0b';
+        this.fontFamily = '';
+        this.backGroundColor = 'white';
+        this.fontSize = '16px';
+        this.fontWeight = 'bold';
+        this.text = '';
+        this.text = text;
+    }
+}
+/* unused harmony export MarkerLabel */
 
 
 
@@ -1275,7 +1417,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 let ApiService = class ApiService {
     constructor() {
         // public API_BASE_URL = 'http://localhost:8080/taxi/';
-        this.API_BASE_URL = 'http://ec2-3-93-81-187.compute-1.amazonaws.com:8080/taxi/';
+        this.API_BASE_URL = 'http://18.191.143.194:8080/taxi/';
         this.API_LOGIN_URL = 'login/user';
         this.API_DRIVER_LIST = 'driver/list';
         this.API_DRIVER_DETAILS = 'driver/details';
@@ -1369,7 +1511,7 @@ const HTTPS = 'https://';
 const GET_DRIVER_BY_ID = '';
 const POST_DRIVER_DATA = '';
 const ADD_DRIVER_DATA = '';
-const baseURL = 'http://ec2-3-93-81-187.compute-1.amazonaws.com:8080/taxi/';
+const baseURL = 'http://18.219.43.223:8080/taxi/';
 let BaseApiService = class BaseApiService {
     constructor() { }
     getDriverById() {
@@ -4055,6 +4197,99 @@ RiderComponent = __decorate([
         __WEBPACK_IMPORTED_MODULE_6__common_baseApi_service__["a" /* BaseApiService */], __WEBPACK_IMPORTED_MODULE_8__common_http_service__["a" /* HttpService */],
         __WEBPACK_IMPORTED_MODULE_9__common_api_service__["a" /* ApiService */]])
 ], RiderComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/services/map.util.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapUtilService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm2015/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+let MapUtilService = class MapUtilService {
+    constructor() {
+        this.numDeltas = 100;
+        this.delay = 10; //milliseconds
+    }
+    transition(marker, result) {
+        let i = 0;
+        const deltaLat = (result[0] - marker.lat) / this.numDeltas;
+        const deltaLng = (result[1] - marker.lng) / this.numDeltas;
+        const delta = [deltaLat, deltaLng];
+        let moveMarker = () => {
+            marker.lat += delta[0];
+            marker.lng += delta[1];
+            // console.log(marker.lng + '' + marker.lat);
+            if (i != this.numDeltas) {
+                i++;
+                setTimeout(() => {
+                    moveMarker();
+                }, this.delay);
+            }
+        };
+        moveMarker();
+    }
+    angleFromCoordinate(oldLoc, newLoc) {
+        let dy = newLoc['lat'] - oldLoc['lat'];
+        let dx = Math.cos(Math.PI / 180 * oldLoc['lat']) * (newLoc['lng'] - oldLoc['lng']);
+        let angle = Math.atan2(dy, dx);
+        angle = angle * (180.0 / Math.PI);
+        angle = 90 - angle;
+        return angle;
+    }
+    getIconUrl(angle) {
+        let iconUrl = './assets/icons/car-marker-0.svg';
+        angle = this.getAngle(angle);
+        if (angle > 315 || angle <= 20) {
+            iconUrl = './assets/icons/car-marker-0.svg';
+        }
+        if (angle > 20 && angle <= 60) {
+            iconUrl = './assets/icons/car-marker-45.svg';
+        }
+        if (angle > 60 && angle <= 110) {
+            iconUrl = './assets/icons/car-marker-90.svg';
+        }
+        if (angle > 110 && angle <= 155) {
+            iconUrl = './assets/icons/car-marker-135.svg';
+        }
+        if (angle > 155 && angle <= 200) {
+            iconUrl = './assets/icons/car-marker-180.svg';
+        }
+        if (angle > 200 && angle <= 245) {
+            iconUrl = './assets/icons/car-marker-225.svg';
+        }
+        if (angle > 245 && angle <= 300) {
+            iconUrl = './assets/icons/car-marker-270.svg';
+        }
+        if (angle > 300 && angle <= 345) {
+            iconUrl = './assets/icons/car-marker-315.svg';
+        }
+        return iconUrl;
+    }
+    getAngle(angle) {
+        if (angle < 0) {
+            angle = 360 + angle;
+            return this.getAngle(angle);
+        }
+        if (angle >= 360) {
+            angle = 360 - angle;
+            return this.getAngle(angle);
+        }
+        return angle;
+    }
+};
+MapUtilService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])()
+], MapUtilService);
 
 
 
