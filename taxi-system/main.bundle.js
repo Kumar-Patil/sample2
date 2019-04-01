@@ -1417,7 +1417,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 let ApiService = class ApiService {
     constructor() {
         // public API_BASE_URL = 'http://localhost:8080/taxi/';
-        this.API_BASE_URL = 'http://18.191.143.194:8080/taxi/';
+        this.API_BASE_URL = 'http://ec2-3-93-81-187.compute-1.amazonaws.com:8080/taxi/';
         this.API_LOGIN_URL = 'login/user';
         this.API_DRIVER_LIST = 'driver/list';
         this.API_DRIVER_DETAILS = 'driver/details';
